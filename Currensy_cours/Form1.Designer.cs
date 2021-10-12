@@ -113,7 +113,7 @@ namespace Currensy_cours
             this.Controls.Add(this.currency);
             this.Controls.Add(this.currency_converted);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Конвертер валют";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

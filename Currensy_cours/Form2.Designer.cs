@@ -39,7 +39,7 @@ namespace Currensy_cours
             this.listBox1.ItemHeight = 36;
             this.listBox1.Location = new System.Drawing.Point(-1, -1);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(221, 436);
+            this.listBox1.Size = new System.Drawing.Size(608, 436);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -47,10 +47,10 @@ namespace Currensy_cours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(218, 450);
+            this.ClientSize = new System.Drawing.Size(605, 431);
             this.Controls.Add(this.listBox1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Выбор валюты";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 

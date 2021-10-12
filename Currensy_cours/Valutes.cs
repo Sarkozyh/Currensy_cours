@@ -44,7 +44,8 @@ namespace Currensy_cours
         {
             using (var webClient = new WebClient())
             {
-                string rawJSON = webClient.DownloadString("https://www.cbr-xml-daily.ru/daily_json.js");  // Скачивание json-файла и преобразование его в строку
+                string rawJSON = Encoding.UTF8.GetString(webClient.DownloadData("https://www.cbr-xml-daily.ru/daily_json.js"));
+                //string rawJSON = webClient.DownloadString("https://www.cbr-xml-daily.ru/daily_json.js");  // Скачивание json-файла и преобразование его в строку
                 dynamic valutes = JsonConvert.DeserializeObject(rawJSON);                                 // Десериализация json-файла из строки
 
                 // Вынесение каждой из валют в отдельный объект

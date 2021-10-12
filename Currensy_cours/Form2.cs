@@ -33,9 +33,9 @@ namespace Currensy_cours
                 int i = 0;
                 while (i < valutes.valuteList.Count)
                 {
-                    Label tmp = new Label();
-                    tmp.Text = valutes.valuteList[i].CharCode;
-                    listBox1.Items.Add(tmp.Text);
+                   // Label tmp = new Label();
+                   // tmp.Text = valutes.valuteList[i].CharCode;
+                    listBox1.Items.Add(valutes.valuteList[i].CharCode + "    " + valutes.valuteList[i].Name);
                     i++;
                 }
             }
